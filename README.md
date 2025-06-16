@@ -12,28 +12,34 @@ A machine learning–based system built using **Python**,**Logistic Regression**
 * 🌐 Django-based web interface for moderation
 
  Tech Stack
-
-* **Frontend:** HTML, CSS (via Django templates)
-* **Backend:** Django (Python)
 * **ML/NLP:** scikit-learn, nltk
 * **Image Analysis:** OpenCV, TensorFlow/Keras
 * **Deployment Ready:** Easy-to-run with `requirements.txt`
 
  Folder Structure
 
-```
-AI-Content-Moderation-System/
+
+content-moderation-system/
 │
-├── dataset/                   # Text and image datasets
-├── models/                    # Saved ML and CNN models
-├── moderation_app/            # Django app files
-│   ├── views.py
-│   ├── urls.py
-│   └── templates/
-├── manage.py
-├── requirements.txt
-└── README.md
-```
+├── datasets/
+│   ├── content_moderation_dataset.csv        # Text classification dataset
+│   └── images_dataset/                       # Folder for image classification
+│       ├── safe/
+│       ├── offensive/
+│       ├── spam/
+│       └── hate/
+│
+├── sample_test_image.jpg                     # Image for prediction test
+│
+├── models/                                   # Folder for saving trained models
+│   ├── text_model.pkl                        # Trained Logistic Regression model
+│   └── vectorizer.pkl                        # Trained TF-IDF vectorizer
+│
+├── train_model.py                            # Main script for training & prediction
+├── requirements.txt                          # All required Python packages
+├── README.md                                 # Project overview and instructions
+└── .gitignore                                 # (Optional) To ignore files like venv, pycache
+
 
  Clone the Repository
 
