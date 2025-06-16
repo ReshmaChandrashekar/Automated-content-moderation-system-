@@ -15,6 +15,16 @@ A machine learning–based system built using **Python**,**Logistic Regression**
 * **ML/NLP:** scikit-learn, nltk
 * **Image Analysis:** OpenCV, TensorFlow/Keras
 * **Deployment Ready:** Easy-to-run with `requirements.txt`
+  
+ **Package need to install**
+pandas              # For data handling
+numpy               # For numerical operations
+opencv-python       # For image processing (cv2)
+nltk                # For text preprocessing
+joblib              # For saving/loading ML models
+scikit-learn        # For Logistic Regression, TF-IDF, etc.
+tensorflow          # For building and training the CNN
+
 
  Folder Structure
 
